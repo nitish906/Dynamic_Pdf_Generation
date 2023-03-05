@@ -1,4 +1,9 @@
 package com.masai.model;
+import java.util.*;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 /*
@@ -20,6 +25,18 @@ package com.masai.model;
 }
  */
 
-public class pdfGen {
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class PdfGen {
+	
+		
+	 	private String seller;
+	    private String sellerGstin;
+	    private String sellerAddress;
+	    private String buyer;
+	    private String buyerGstin;
+	    private String buyerAddress;
+	    private List<Item> items;
 
 }
